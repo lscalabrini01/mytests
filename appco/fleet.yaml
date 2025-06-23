@@ -1,10 +1,7 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: istio-system
----
+namespace: istio-system
+
 helm:
-  releaseName: sample-appco-nginx
+  releaseName: fleet-appco-istio
   chart: "oci://dp.apps.rancher.io/charts/istio:0.8.1"
   repo: ""
   force: false
