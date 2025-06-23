@@ -1,0 +1,12 @@
+namespace: application-collection
+
+helm:
+  releaseName: sample-appco-nginx
+  chart: "oci://dp.apps.rancher.io/containers/nginx:1.28.0"
+  repo: ""
+  force: false
+  timeoutSeconds: 0
+  values:
+    replicas: 2
+    service:
+      type: NodePort
