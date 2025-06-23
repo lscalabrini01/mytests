@@ -6,4 +6,4 @@ helm:
   repo: ""
   force: false
   timeoutSeconds: 0
-  defaultNamespace: istio-system
+  targetNamespace: istio-system
