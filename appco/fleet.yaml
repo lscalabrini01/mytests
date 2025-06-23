@@ -7,6 +7,6 @@ helm:
   force: false
   timeoutSeconds: 0
   values:
-    replicas: 2
+    replicas: 1
     service:
       type: NodePort
