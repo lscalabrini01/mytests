@@ -6,7 +6,3 @@ helm:
   repo: ""
   force: false
   timeoutSeconds: 0
-  values:
-    replicas: 1
-    service:
-      type: NodePort
