@@ -1,9 +1,8 @@
-namespace: istio-system
-
+defaultNamespace: istio-system
 helm:
   releaseName: fleet-appco-istio
   chart: "oci://dp.apps.rancher.io/charts/istio:0.8.1"
-  repo: ""
+  version: "0.8.1"
   force: false
   timeoutSeconds: 0
   targetNamespace: istio-system
