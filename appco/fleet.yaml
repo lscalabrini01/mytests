@@ -1,8 +1,12 @@
-namespace: fleet-namespace-ecr-nginx
-
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-system
+---
 helm:
-  releaseName: sample-ecr-nginx
-  chart: "oci://dp.apps.rancher.io/containers/nginx:1.28.0"
+  releaseName: sample-appco-nginx
+  chart: "oci://dp.apps.rancher.io/charts/istio:0.8.1"
   repo: ""
   force: false
   timeoutSeconds: 0
+  targetNamespace: istio-system
