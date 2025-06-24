@@ -1,5 +1,9 @@
 defaultNamespace: istio-system
-imagePullSecrets: ["application-collection"]
+
+global:
+  imagePullSecrets:
+    - name: application-collection
+
 helm:
   releaseName: fleet-appco-istio
   chart: "oci://dp.apps.rancher.io/charts/istio:0.8.1"
