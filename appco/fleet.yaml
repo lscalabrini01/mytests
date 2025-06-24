@@ -6,3 +6,4 @@ helm:
   force: false
   timeoutSeconds: 0
   targetNamespace: istio-system
+  imagePullSecrets: [application-collection]
